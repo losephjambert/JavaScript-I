@@ -12,12 +12,15 @@ myFunction();
 // };
 // anotherFunction("Example");
 const anotherFunction = param => param;
-anotherFunction();
+anotherFunction("Example");
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
 // add(1,2);
+
+const add = (param1, param2) => param1 + param2;
+add(1, 2);
 
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
