@@ -25,7 +25,7 @@ gmartinson3@illinois.edu, Gannie, M
 adaine5@samsung.com, Antonietta, F`
   .trim()
   .split("\n")
-  .map(line => line.split(" "))
+  .map(line => line.split(", "))
   .reduce((students, line, i) => {
     students = students || [];
     students.push({
@@ -36,20 +36,30 @@ adaine5@samsung.com, Antonietta, F`
     });
     return students;
   }, []);
-console.log(students);
+// console.log(students);
 // ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+students.forEach(student => {
+  if (student.name === "Mitzi") console.log(student.name);
+});
 // Kennan's ID
-
+students.forEach(student => {
+  if (student.name === "Kennan") console.log(student.id);
+});
 // Keven's email
-
+students.forEach(student => {
+  if (student.name === "Keven") console.log(student.email);
+});
 // Gannie's name
-
+students.forEach(student => {
+  if (student.name === "Gannie") console.log(student.name);
+});
 // Antonietta's Gender
-
+students.forEach(student => {
+  if (student.name === "Antonietta") console.log(student.gender);
+});
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
