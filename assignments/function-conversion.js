@@ -11,6 +11,8 @@ myFunction();
 //   return param;
 // };
 // anotherFunction("Example");
+const anotherFunction = param => param;
+anotherFunction();
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
