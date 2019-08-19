@@ -36,36 +36,41 @@ adaine5@samsung.com, Antonietta, F`
     });
     return students;
   }, []);
-// console.log(students);
+let Mitzi, Kennan, Keven, Gannie, Antonietta;
+students.forEach(student => {
+  if (student.name === "Mitzi") Mitzi = student;
+  if (student.name === "Kennan") Kennan = student;
+  if (student.name === "Keven") Keven = student;
+  if (student.name === "Gannie") Gannie = student;
+  if (student.name === "Antonietta") Antonietta = student;
+});
 // ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-students.forEach(student => {
-  if (student.name === "Mitzi") console.log(student.name);
-});
+console.log(Mitzi.name);
+
 // Kennan's ID
-students.forEach(student => {
-  if (student.name === "Kennan") console.log(student.id);
-});
+console.log(Kennan.id);
+
 // Keven's email
-students.forEach(student => {
-  if (student.name === "Keven") console.log(student.email);
-});
+console.log(Keven.email);
+
 // Gannie's name
-students.forEach(student => {
-  if (student.name === "Gannie") console.log(student.name);
-});
+console.log(Gannie.name);
+
 // Antonietta's Gender
-students.forEach(student => {
-  if (student.name === "Antonietta") console.log(student.gender);
-});
+console.log(Antonietta.gender);
+
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+Kennan.speak = () => `Hello, my name is ${Kennan.name}!`;
+console.log(Kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+Antonietta.multiply = (num1, num2) =>
+  `The product of those two numbers is ${num1 * num2}!`;
+console.log(Antonietta.multiply(3, 4));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
