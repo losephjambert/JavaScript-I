@@ -16,3 +16,9 @@ console.log(myCounter());
 console.log(myCounter());
 console.log(myCounter());
 console.log(myCounter());
+
+const add = (n, m) => n + m;
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(numbers);
+let added = numbers.map(number => add(number, number));
+console.log(added);
